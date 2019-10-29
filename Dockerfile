@@ -1,3 +1,3 @@
 FROM busybox
-COPY initpasswd.sh /bin/initpasswd.sh
-CMD ["initpasswd.sh"]
+COPY oc-passwd-init.sh /bin/oc-passwd-init.sh
+CMD ["oc-passwd-init.sh"]

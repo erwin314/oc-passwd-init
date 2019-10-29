@@ -12,7 +12,7 @@
 ```  
     initContainers:
       - name: init-passwd
-        image: nlxsoftware/init-passwd
+        image: nlxsoftware/oc-passwd-init
         volumeMounts:
         - name: passwd-volume
           mountPath: /work
