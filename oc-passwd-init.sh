@@ -11,5 +11,5 @@ if ! whoami &> /dev/null; then
     # Add the current user
     USER_NAME=${USER_NAME:-user_$(id -u)}
     USER_HOME=${USER_HOME:-/home/${USER_NAME}}
-    echo '${USER_NAME}:x:$(id -u):0:${USER_NAME} user:${USER_HOME}:/sbin/nologin' >> /work/passwd
+    echo "${USER_NAME}:x:$(id -u):0:${USER_NAME} user:${USER_HOME}:/sbin/nologin" >> /work/passwd
 fi
