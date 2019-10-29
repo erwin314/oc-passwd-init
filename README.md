@@ -3,7 +3,7 @@
 1. Make sure there is a volume that can hold the custom passwd file for the container. This volume is only needed by the pod and only while running, so a simple "emptyDir" volume can be used.
 ```
       volumes:
-        - name: shared-volume
+        - name: passwd-volume
           emptyDir: {}
 ```
 
